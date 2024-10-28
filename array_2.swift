@@ -14,7 +14,7 @@ print(findNumbers([12,345,2,6,7896]))
 
 // 개선
 
-func findNumbers2(_ nums: [Int]) -> Int {
+func findNumbers2(_ nums:  [Int]) -> Int {
     return nums.reduce(0) { count, num in
         count + (String(num).count.isMultiple(of: 2) ? 1 : 0)
     }
