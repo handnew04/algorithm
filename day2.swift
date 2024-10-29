@@ -7,6 +7,8 @@ func solution(_ t:String, _ p:String) -> Int {
 
   for i in 0...t.count - 1 {
     guard t.dropLast(i).suffix(t.count - i).count >= p.count else { break }
+    //gurad t.dropFirst(i) >= p.count else { break }
+    //로 작성하는 것이 내 의도에는 더 맞았음. 
 
     if p >= t.dropFirst(i).prefix(p.count) {
       print(t.dropFirst(i).prefix(p.count))
@@ -18,6 +20,7 @@ func solution(_ t:String, _ p:String) -> Int {
 }
 
 solution("10203", "15")
+
 
 
 //Better Solution
