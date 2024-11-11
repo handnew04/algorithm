@@ -20,7 +20,7 @@ func solution(_ paticipant: [String], _ completion: [String]) -> String {
 // Better solution
 
 // filter, map 대신 first사용하기 value > 0으로 좀더 명확하게 해주기.
-func solution(_ participant: [String], _ completion: [String]) -> String {
+func solution1(_ participant: [String], _ completion: [String]) -> String {
     var dic = [String: Int]()
     participant.forEach { dic[$0, default: 0] += 1 }
     completion.forEach { dic[$0]! -= 1 }
