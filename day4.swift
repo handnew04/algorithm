@@ -1,4 +1,5 @@
 //https://school.programmers.co.kr/learn/courses/30/lessons/81301
+import Foundation
 
 func mapper(_ s:String) -> Int {
   switch s {
@@ -50,7 +51,7 @@ func solution(_ s:String) -> Int {
 
 
 //Better Solution
-func solution(_ s:String) -> Int {
+func solution1(_ s:String) -> Int {
     let arr = ["zero","one","two","three","four","five","six","seven","eight","nine"]
     var str = s
     for i in 0..<arr.count {
